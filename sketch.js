@@ -30,8 +30,9 @@ quebrando_ant.looping=false
 
 function setup() {
   createCanvas(1000,700);
+ adjustOrientation()
   frameRate(80);
-ground = createSprite(500,690,1000,20)
+  ground = createSprite(500,690,1000,20)
 
   lander=createSprite(100,50,30,30)
   lander.addImage(lander_img)
