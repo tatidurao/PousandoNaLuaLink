@@ -208,4 +208,11 @@ function ganhar(){
 
 }
 
+function adjustOrientation() {
+    if (window.innerHeight > window.innerWidth) {
+        alert('Por favor, gire seu dispositivo para o modo paisagem');
+    }
+}
 
+window.addEventListener('resize', adjustOrientation);
+window.addEventListener('orientationchange', adjustOrientation);
